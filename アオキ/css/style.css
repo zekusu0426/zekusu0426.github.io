@@ -1,0 +1,325 @@
+@charset="UTF-8";
+
+
+/* 基本レイアウト */
+body {
+  background-color: #f3f2e9;
+  color: #333;
+  font-size: 87.5%;
+  line-height: 1.5;
+  font-family:
+      'Hiragino Kaku Gothic ProN',
+      Meiryo, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, #slide, #contents, footer {
+  margin: 0 auto;
+  width: 960px;
+}
+
+
+/* ヘッダー要素 */
+header {
+  margin-bottom: 8px;
+}
+
+header h1 {
+  display: block;
+  width: 400px;
+  height: 112px;
+  margin-bottom: 4px;
+}
+
+header h1 img{
+  width: 100%;
+  height: auto;
+}
+
+header .disc {
+  font-size:12px;
+  margin:0 0 8px 0;
+  padding-left: 16px;
+  font-weight:bold;
+}
+
+
+/* ヘッダースライドショー要素 */
+header #slide {
+  /*border:1px solid #AAAAAA;*/
+  height: 480px;
+  background-image: url(../images/slide01.png);
+  background-repeat: no-repeat;
+  width: auto;
+  background-size:cover;
+  -moz-box-shadow: 0 1px 3px #000;
+  -webkit-box-shadow: 0 1px 3px #000;
+}
+
+header #slide img {
+  width: 100%;
+  height: auto;
+}
+
+header .empty{
+  height: 85px;
+}
+
+
+
+/* ナビゲーションバー要素 */
+nav {
+  margin-top: -84px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+
+nav ul,nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul{
+  overflow: hidden;
+}
+
+nav ul li    {
+    list-style: none;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    -moz-box-shadow: 0 1px 3px #000;
+    -webkit-box-shadow: 0 1px 1px #000;
+}
+
+nav li a  {
+    font-size: 16px;
+    display: block;
+    width: 233px;
+    padding: 24px 0px;
+    margin-left: 4px;
+    background: #333333;
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 0.8;
+    border:1px solid #000;
+}
+
+nav li a:hover    {
+    padding: 22px 0px;
+    border-bottom: 4px solid #006400;
+    background: #222;
+    opacity: 1.0;
+}
+
+/* コンテンツ領域のカスタマイズ */
+
+#contents {
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+#topic {
+  float: left;
+  width: 560px;
+  padding: 0 10px 5px 10px;
+  height: auto;
+  margin-left: 12px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 1px 1px 3px #222;
+  -webkit-box-shadow: 1px 1px 3px #222;
+    /* ↓テスト確認のため */
+  background-color: #f2f2f2;
+  border: 1px solid #AAAAAA;
+}
+
+#topic h1{
+  background: url(../images/h1_tag.png) no-repeat left center;
+  margin: 10px 0 20px 0;
+  padding: 30px 0px 10px 100px;
+  font-family: HGPSoeiPresenceEB;
+  color: #000;
+}
+#topic ul li{
+  list-style: none;
+}
+
+#topic ul li a {
+  font-size: 13px;
+  color: #006400;
+}
+
+#topic ul {
+  padding-left:20px;
+}
+
+#topic time{
+  font-weight: bold;
+  padding-right:20px;
+}
+
+#topic ul li{
+  color: #000;
+}
+
+
+#topic .news a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #006400;
+  margin: 4px;
+  float: right;
+}
+
+
+/* サイドバー */
+
+#adsbar {
+  float :left;
+  margin-left:13px;
+  width: 340px;
+  -moz-box-shadow: 1px 1px 3px #333;
+  -webkit-box-shadow: 1px 1px 3px #333;
+    /* ↓テスト確認のため */
+  background-color: #d7d7d7;
+  border:1px solid #AAAAAA;
+}
+
+
+footer {
+  margin-top: 40px;
+  box-shadow: 0 9px 12px -9px #222;
+  background-color: #AAAAAA;
+  color: #FFFFFF;
+}
+
+footer ul,footer li {
+  margin: 0;
+  padding: 0;
+}
+
+/* index 以外の設定 */
+
+#sub {
+  margin: 0 auto;
+  padding: 20px 40px;
+    margin-bottom: 10px;
+  -webkit-box-shadow: 1px 1px 3px #222;
+  -webkit-box-shadow: 1px 1px 3px #222;
+    /* ↓テスト確認のため */
+  background-color: #f2f2f2;
+  border: 1px solid #AAAAAA;
+}
+
+#sub h1{
+  background: url(../images/h1_tag_sub.png) no-repeat left center;
+  margin: 20px 0 30px 0;
+  padding: 30px 0px 10px 80px;
+  font-family: HGPSoeiPresenceEB;
+  color: #000;
+}
+
+
+/* Newsページ */
+
+#sub ul li{
+  list-style: none;
+}
+
+#sub ul li a {
+  font-size: 13px;
+  color: #006400;
+}
+
+#sub ul {
+  padding-left:20px;
+}
+
+#sub time{
+  font-weight: bold;
+  padding-right:20px;
+}
+
+#sub ul li{
+  color: #000;
+}
+
+
+/* 「お問い合わせ」ページ ここから↓ */
+
+form p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+form p:nth-last-child(2) {
+  margin-bottom: 7px;
+}
+
+form p:last-child {
+  margin-bottom: 0;
+}
+
+input[type="text"]{
+  width: 200px;
+}
+input[type="email"]{
+  width: 300px;
+}
+
+textarea {
+  width: 420px;
+  height: 115px;
+  overflow-y: scroll;
+}
+
+/* 「お問い合わせ」ページ ここまで↑ */
+
+
+/* 会社概要 */
+
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+table th, table td{
+  padding: 15px;
+  border: 1px solid #6c5f45;
+}
+
+table tr th:first-child {
+  width: 70px;
+}
+
+table tbody th,
+table tbody td {
+  vertical-align: top;
+}
+
+table thead tr th{
+  background-color: #eee8cc;
+}
+
+table tbody tr　{
+  background-color: #ffffff;
+}
+
+
+caption{
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+caption p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
