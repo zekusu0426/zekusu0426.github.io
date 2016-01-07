@@ -1,0 +1,88 @@
+body {
+  padding-top: 80px;
+}
+
+.jumbotron {
+  min-height: 530px;
+}
+
+section.section {
+    padding: 84px 0;
+}
+
+
+section.section .subtitle {
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+/*====================*/
+
+.row special {
+  width: 80%;
+}
+
+h4 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.point-description {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.thumbnail-box {
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  max-width: 50%;
+}
+
+.img-thumbnail {
+  max-height: 200px;
+  width: 100%;
+}
+
+/* =============== */
+
+@media screen and ( min-width: 768px ) {
+  #banner {
+    min-height: 300px;
+    border-bottom: none;
+  }
+  .bs-docs-section {
+    margin-top: 8em;
+  }
+  .bs-component {
+    position: relative;
+  }
+  .bs-component .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    display: block;
+  }
+  .bs-component .modal-dialog {
+    width: 90%;
+  }
+  .bs-component .popover {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    margin: 20px;
+  }
+  .nav-tabs {
+    margin-bottom: 15px;
+  }
+  .progress {
+    margin-bottom: 10px;
+  }
+}

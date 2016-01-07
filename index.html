@@ -4,72 +4,113 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>ポートフォリオサイトを作る</title>
-
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <style type="text/css">
-  body { padding-top: 80px; }
-  @media ( min-width: 768px ) {
-    #banner {
-      min-height: 300px;
-      border-bottom: none;
-    }
-    .bs-docs-section {
-      margin-top: 8em;
-    }
-    .bs-component {
-      position: relative;
-    }
-    .bs-component .modal {
-      position: relative;
-      top: auto;
-      right: auto;
-      left: auto;
-      bottom: auto;
-      z-index: 1;
-      display: block;
-    }
-    .bs-component .modal-dialog {
-      width: 90%;
-    }
-    .bs-component .popover {
-      position: relative;
-      display: inline-block;
-      width: 220px;
-      margin: 20px;
-    }
-    .nav-tabs {
-      margin-bottom: 15px;
-    }
-    .progress {
-      margin-bottom: 10px;
-    }
-  }
-  </style>
-
-  <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
+  <link rel="stylesheet" type="text/css" href="css/child.css">
 </head>
 <body>
-<h1>ようこそ、ポートフォリオサイトへ</h1>
-<p class="lead">Bootstrap 入門へようこそ</p>
-<p>Bootstrap は・・・</p>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-3 col-sm-6 col-md-2 bg-info my-media-1"> </div>
-    <div class="col-xs-3 col-sm-2 col-md-2 bg-success my-media-2"> </div>
-    <div class="col-xs-3 col-sm-2 col-md-2 bg-warning my-media-3"> </div>
-    <div class="col-xs-3 col-sm-2 col-md-6 bg-danger my-media-4"> </div>
+
+<header>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Photo</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Top</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Demo <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Japanese Page</a></li>
+              <li><a href="#">English Page</a></li>
+            </ul>
+          </li>
+          <li><a href="#">menu1</a></li>
+          <li><a href="#">menu2</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 outline">
+        <h1>Welcome to Portfolio</h1>
+        <p>就活用にポートフォリオを作りました。</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
+<section class="section section-default point">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 subtitle">
+        <h2>過去に作ったものを紹介します。</h2>
+        <p>こちらでは、プログラミングを学習を始めてから作ったものを紹介していきます。</p>
+      </div>
+    </div>
+
+    <div class="row row-0">
+      <div class="col-md-4 col-sm-offset-2 point-box">
+        <div class="thumbnail-box">
+           <img src="images/amazon.jpg" class="img-thumbnail" alt="">
+        </div>
+        <div class="point-description">
+          <h4>Depotサイト</h4>
+          <p>こちらではRuby on Railを使い、オンラインショップを作りました。</p>
+        </div>
+      </div>
+      <div class="col-md-4 point-box">
+        <div class="thumbnail-box">
+           <img src="images/amazon.jpg" class="img-thumbnail" alt="">
+        </div>
+        <div class="point-description">
+          <h4>ブライダルサイト</h4>
+          <p>こちらは結婚式場をテーマにしたサイトを作成しました。ウェブクリエイター試験の学習の一環で作成しました。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-offset-2 point-box">
+        <div class="thumbnail-box">
+           <img src="images/amazon.jpg" class="img-thumbnail" alt="">
+        </div>
+        <div class="point-description">
+          <h4>Open Source</h4>
+          <p>作成に使用したSASSファイルは全て公開されています。変数の定義ファイルを変更することで自分好みの設定に変更することも可能です。</p>
+        </div>
+      </div>
+      <div class="col-md-4 point-box">
+        <div class="thumbnail-box">
+           <img src="images/amazon.jpg" class="img-thumbnail" alt="">
+        </div>
+        <div class="point-description">
+          <h4>Optimized Japanese</h4>
+          <p>本家Bootstrapでは指定されていない日本語フォントに関する指定が行われているため、美しく日本語を表示できます。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
   $('.bs-component [data-toggle="popover"]').popover();
   $('.bs-component [data-toggle="tooltip"]').tooltip();
